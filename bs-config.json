@@ -1,0 +1,5 @@
+{
+  "server": {
+    "baseDir": "dist-uglify-3.3.2"
+  }
+}
