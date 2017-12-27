@@ -8,7 +8,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prod-build": "ng build --prod --no-build-optimizer --oh=none --no-vendor-chunk",
+    "prod-serve": "ng serve --prod --no-build-optimizer --oh=none --no-vendor-chunk",
+    "use-uglify-3.2.2": "npm i uglify-es@3.2.2 --save-exact && rm -rf package-lock.json node_modules && npm i && npm ls uglify-es",
+    "use-uglify-3.3.2": "npm i uglify-es@3.3.2 --save-exact && rm -rf package-lock.json node_modules && npm i && npm ls uglify-es",
+    "edit-prod-config": "code ./node_modules/@angular/cli/models/webpack-configs/production.js"
   },
   "private": true,
   "dependencies": {
